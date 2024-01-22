@@ -13,7 +13,10 @@ class SignInPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
             // ignore: prefer_const_constructors
-            Icon(Icons.face),
+            Image.asset(
+              'assets/images/webminds logo.png',
+              fit: BoxFit.cover,
+            ),
             Padding(
               padding: EdgeInsets.all(8.0),
               child: Column(
@@ -22,9 +25,9 @@ class SignInPage extends StatelessWidget {
                     style: TextStyle(color: Colors.blueGrey),
                     decoration: InputDecoration(
                       hintText: 'Enter email',
-                      hintStyle: TextStyle(color: Colors.black),
+                      hintStyle: TextStyle(color: Colors.grey),
                       filled: true,
-                      fillColor: Colors.amber,
+                      fillColor: Color.fromRGBO(230, 245, 238, 1),
                     ),
                     keyboardType: TextInputType.emailAddress,
                   ),
@@ -35,9 +38,9 @@ class SignInPage extends StatelessWidget {
                     style: TextStyle(color: Colors.blueGrey),
                     decoration: InputDecoration(
                       hintText: 'Enter Passowrd',
-                      hintStyle: TextStyle(color: Colors.black),
+                      hintStyle: TextStyle(color: Colors.grey),
                       filled: true,
-                      fillColor: Colors.amber,
+                      fillColor: Color.fromRGBO(230, 245, 238, 1),
                     ),
                     keyboardType: TextInputType.visiblePassword,
                   ),
@@ -49,7 +52,7 @@ class SignInPage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Icon(Icons.ac_unit),
-                Icon(Icons.favorite),
+                Icon(Icons.ac_unit),
               ],
             ),
             ElevatedButton(

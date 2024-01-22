@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+// ignore: unused_import
 import 'package:webminds_app/sign_in.dart';
 // ignore: unused_import
 import 'package:webminds_app/sign_up.dart';
-import 'package:webminds_app/test.dart';
-// ignore: unused_import
+
 import 'package:webminds_app/webminds_home_page.dart';
 
 class MyApp extends StatelessWidget {

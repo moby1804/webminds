@@ -15,8 +15,15 @@ class _MyHomePageState extends State<MyHomePage> {
     // ignore: prefer_const_constructors
     return Container(
       color: Colors.white,
-      child: Container(
-        child: const Icon(Icons.home),
+      child: Expanded(
+        child: Container(
+          height: 100,
+          width: 100,
+          child: Image.asset(
+            'assets/images/webminds logo.png',
+            // fit: BoxFit.fitHeight,
+          ),
+        ),
       ),
     );
   }
